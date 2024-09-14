@@ -9,7 +9,7 @@ parser=argparse.ArgumentParser(description="Python script using Redfish API to g
 while True:
   args=vars(parser.parse_args())
   idrac_username="root"
-  idrac_password="m4venir2!"
+  idrac_password="password"
  
   def check_supported_idrac_version(idrac_ip):
     response = requests.get('https://%s/redfish/v1/Systems/System.Embedded.1/Bios' % idrac_ip,verify=False,auth=(idrac_username, idrac_password))
