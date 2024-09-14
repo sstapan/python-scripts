@@ -9,7 +9,7 @@ parser=argparse.ArgumentParser(description="Python script using Redfish API to g
 while True:
   args=vars(parser.parse_args())
   idrac_username="root"
-  idrac_password="m4venir2!"
+  idrac_password="password"
 
   def nodeChoice():
     print("\n##### Select Node #####")
