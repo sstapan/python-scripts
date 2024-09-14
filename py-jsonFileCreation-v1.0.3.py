@@ -20,7 +20,7 @@ while True:
       tempctrl += '\n    {\n' + '        "name":"' + nodename + '",\n'
       tempctrl +='        "mac":["' + nodemac + '"],\n' + '        "cpu":"32",\n' + '        "memory":"131072",\n' + '        "disk":"500",\n'
       tempctrl += '        "arch":"x86_64",\n' + '        "pm_type":"ipmi",\n' + '        "pm_user":"root",\n'
-      tempctrl += '        "pm_password":"m4venir2!",\n' + '        "pm_addr":"' + nodeip + '",\n'
+      tempctrl += '        "pm_password":"password",\n' + '        "pm_addr":"' + nodeip + '",\n'
       tempctrl += '        "capabilities":"node:controller-' + str(x) + ',profile:control,boot_option:local"\n' + '    },'
       x+=1
     tempctrl = tempctrl[:tempctrl.rfind('\n')]
@@ -39,7 +39,7 @@ while True:
       tempstrg += '\n    {\n' + '        "name":"' + nodename + '",\n'
       tempstrg +='        "mac":["' + nodemac + '"],\n' + '        "cpu":"96",\n' + '        "memory":"256000",\n' + '        "disk":"500",\n'
       tempstrg += '        "arch":"x86_64",\n' + '        "pm_type":"ipmi",\n' + '        "pm_user":"root",\n'
-      tempstrg += '        "pm_password":"m4venir2!",\n' + '        "pm_addr":"' + nodeip + '",\n'
+      tempstrg += '        "pm_password":"password",\n' + '        "pm_addr":"' + nodeip + '",\n'
       tempstrg += '        "capabilities":"node:storage-' + str(x) + ',profile:ceph-storage,boot_option:local"\n' + '    },'
       x+=1
     tempstrg = tempstrg[:tempstrg.rfind('\n')]
@@ -58,7 +58,7 @@ while True:
       tempcomp += '\n    {\n' + '        "name":"' + nodename + '",\n'
       tempcomp +='        "mac":["' + nodemac + '"],\n' + '        "cpu":"104",\n' + '        "memory":"512000",\n' + '        "disk":"500",\n'
       tempcomp += '        "arch":"x86_64",\n' + '        "pm_type":"ipmi",\n' + '        "pm_user":"root",\n'
-      tempcomp += '        "pm_password":"m4venir2!",\n' + '        "pm_addr":"' + nodeip + '",\n'
+      tempcomp += '        "pm_password":"password",\n' + '        "pm_addr":"' + nodeip + '",\n'
       tempcomp += '        "capabilities":"node:computeDell6230-' + str(x) + ',profile:baremetal,boot_option:local"\n' + '    },'
       x+=1
     tempcomp = tempcomp[:tempcomp.rfind('\n')]
